@@ -105,3 +105,23 @@ elements.forEach((element) => {
         }
     );
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // Animación de flotación para el logo
+    gsap.to(".hero-banner", {
+        y: -20, // Mueve la imagen hacia arriba
+        duration: 1.5, // Duración de la animación
+        yoyo: true, // Hace que la animación se repita en dirección opuesta
+        repeat: -1, // Repite la animación infinitamente
+        ease: "power1.inOut", // Efecto de suavizado
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Animación de flotación para el logo
+    gsap.to(".features-item-banner", {
+        y: -10, // Mueve la imagen hacia arriba
+        duration: 1.5, // Duración de la animación
+        yoyo: true, // Hace que la animación se repita en dirección opuesta
+        repeat: -1, // Repite la animación infinitamente
+        ease: "power1.inOut", // Efecto de suavizado
+    });
+});

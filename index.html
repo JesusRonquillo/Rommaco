@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Romma Corporation</title>
 
@@ -28,6 +32,10 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
   </head>
 
   <body id="top">
@@ -53,27 +61,27 @@
           <nav class="navbar" data-navbar>
             <ul class="navbar-list">
               <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">INICIO</a>
               </li>
 
               <li class="nav-item">
-                <a href="#about" class="nav-link">What we do</a>
+                <a href="#about" class="nav-link">CONOCENOS</a>
               </li>
 
               <li class="nav-item">
-                <a href="#features" class="nav-link">Why us?</a>
+                <a href="#features" class="nav-link">¿PORQUE NOSOTROS?</a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Our work</a>
+                <a href="#" class="nav-link">NOSOTROS</a>
               </li>
 
               <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">CONTACTO</a>
               </li>
             </ul>
 
-            <button class="btn btn-primary">Get in touch</button>
+            <!-- <button class="btn btn-primary"> in touch</button> -->
           </nav>
         </div>
       </div>
@@ -88,14 +96,20 @@
         <section class="hero hidden" id="home">
           <div class="container">
             <div class="hero-content">
-              <h1 class="h1 hero-title">Your full-funnel growth agency</h1>
+              <h1 class="h1 hero-title">
+                Innovacion IT y IoT al alcance de Tu Negocio
+              </h1>
 
               <p class="hero-text">
-                Capture and retrieve your lists across devices to help you stay
-                organized at work, home, and on the go.
+                Soluciones tecnológicas digitales personalizadas para tus
+                necesidades empresariales.
               </p>
 
-              <button class="btn btn-primary">Get started</button>
+              <button class="btn btn-primary">
+                <a href="#contact" style="color: inherit; text-decoration: none"
+                  >¡hagámoslo!</a
+                >
+              </button>
             </div>
 
             <div class="hero-banner"></div>
@@ -111,12 +125,13 @@
         <section class="about hidden" id="about">
           <div class="container">
             <div class="about-top">
-              <h2 class="h2 section-title">What we do</h2>
+              <h2 class="h2 section-title">¿Qué hacemos?</h2>
 
               <p class="section-text">
-                Each time a digital asset is purchased or sold, Sequoir donates
-                a percentage of the fees back into the development of the asset
-                through its charitable foundation.
+                Somos una empresa dedicada a ofrecer soluciones tecnológicas
+                integrales en IT, IoT y Electrónica. Con un equipo de expertos,
+                transformamos tus ideas en proyectos exitosos, combinando
+                tecnología de vanguardia con un enfoque personalizado.
               </p>
 
               <ul class="about-list">
@@ -126,13 +141,12 @@
                       <ion-icon name="briefcase-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">
-                      Paid Search and Social Management
-                    </h3>
+                    <h3 class="h3 card-title">Compromiso con la Calidad</h3>
 
                     <p class="card-text">
-                      Each time a digital asset is purchased or sold, Sequoir
-                      donates a percentage of the fees back
+                      Nos dedicamos a entregar servicios confiables y robustos.
+                      Nuestro equipo garantiza resultados efectivos que superen
+                      tus expectativas.
                     </p>
                   </div>
                 </li>
@@ -143,11 +157,12 @@
                       <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">Direct Response Content</h3>
+                    <h3 class="h3 card-title">Orientación al Cliente</h3>
 
                     <p class="card-text">
-                      Each time a digital asset is purchased or sold, Sequoir
-                      donates a percentage of the fees back
+                      Tus necesidades son nuestra prioridad. Diseñamos
+                      soluciones personalizadas y trabajamos de la mano contigo
+                      para alcanzar el éxito.
                     </p>
                   </div>
                 </li>
@@ -158,13 +173,13 @@
                       <ion-icon name="rocket-outline"></ion-icon>
                     </div>
 
-                    <h3 class="h3 card-title">
-                      CRO and Retention Optimizations
-                    </h3>
+                    <h3 class="h3 card-title">Innovación Tecnológica</h3>
 
                     <p class="card-text">
-                      Each time a digital asset is purchased or sold, Sequoir
-                      donates a percentage of the fees back
+                      Ofrecemos soluciones tecnológicas avanzadas para ayudarte
+                      a alcanzar tus objetivos. Desde IoT hasta proyectos de
+                      electrónica, siempre implementamos lo último en
+                      innovación.
                     </p>
                   </div>
                 </li>
@@ -181,15 +196,24 @@
               </figure>
 
               <div class="about-bottom-content">
-                <h2 class="h2 section-title">We’re obsessed with growth</h2>
+                <h2 class="h2 section-title">
+                  Nosotros estamos obsesionados con el crecimiento
+                </h2>
 
                 <p class="section-text">
-                  Each time a digital asset is purchased or sold, Sequoir
-                  donates a percentage of the fees back into the development of
-                  the asset through its charitable foundation.
+                  Nuestro equipo está comprometido a impulsar tu negocio hacia
+                  nuevos horizontes. Con estrategias innovadoras y un enfoque en
+                  resultados, hacemos que cada paso cuente para alcanzar tus
+                  metas de manera sostenible y efectiva.
                 </p>
 
-                <button class="btn btn-secondary">Sign Up For Free</button>
+                <button class="btn btn-secondary">
+                  <a
+                    href="#contact"
+                    style="color: inherit; text-decoration: none"
+                    >Impulsa tu crecimiento</a
+                  >
+                </button>
               </div>
             </div>
           </div>
@@ -202,14 +226,17 @@
         <section class="features hidden" id="features">
           <div class="container">
             <h2 class="h2 section-title">
-              Our team is made up of all different backgrounds from all over the
-              world.
+              La Diferencia Está en Cómo Hacemos las Cosas
             </h2>
 
             <p class="section-text">
-              Each time a digital asset is purchased or sold, Sequoir donates a
-              percentage of the fees back into the development of the asset
-              through its charitable foundation.
+              Nos enfocamos en brindarte soluciones personalizadas, combinando
+              experiencia, innovación y pasión para ayudarte a alcanzar tus
+              metas más ambiciosas. Nuestro compromiso es ofrecer resultados
+              medibles, estrategias efectivas y un enfoque completamente
+              centrado en tus necesidades. Superamos tus expectativas para
+              asegurarnos de que confíes en nosotros como tu mejor aliado hacia
+              el éxito.
             </p>
 
             <ul class="features-list">
@@ -222,12 +249,14 @@
                 </figure>
 
                 <div class="feature-item-content">
-                  <h3 class="h2 item-title">Cover your everyday expenses</h3>
+                  <h3 class="h2 item-title">
+                    Seguimiento en Todos tus Procesos
+                  </h3>
 
                   <p class="item-text">
-                    Inspiration comes in many ways and you like to save
-                    everything from. sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Acompañamos a tu negocio en cada paso, con seguimiento
+                    constante, reuniones en tiempo real y objetivos bien
+                    definidos para asegurar el éxito de tu empresa.
                   </p>
                 </div>
               </li>
@@ -242,13 +271,13 @@
 
                 <div class="feature-item-content">
                   <h3 class="h2 item-title">
-                    We offer low fees that are transparent
+                    Todo listo para que solo te enfoques en usarlo
                   </h3>
 
                   <p class="item-text">
-                    Each time a digital asset is purchased or sold, Sequoir
-                    donates a percentage of the fees back into the development
-                    of the asset through its charitable foundation.
+                    Nos encargamos de cada detalle, desde la planificación hasta
+                    la ejecución, para que puedas disfrutar de soluciones listas
+                    para usar, sin complicaciones.
                   </p>
                 </div>
               </li>
@@ -263,11 +292,11 @@
         <section class="cta hidden">
           <div class="container">
             <div class="cta-card">
-              <h3 class="cta-title">Try for 7 days free</h3>
+              <h3 class="cta-title">Cotiza GRATIS con nosotros</h3>
 
               <p class="cta-text">
-                Each time a digital asset is purchased or sold, Sequoir donates
-                a percentage of the fees back.
+                Te enviamos una cotización personalizada, ajustada exactamente a
+                lo que tu negocio necesita para crecer y alcanzar sus objetivos.
               </p>
 
               <form action="" class="cta-form">
@@ -278,7 +307,7 @@
                 />
 
                 <button type="submit" class="btn btn-secondary">
-                  Try It Now
+                  Cotizar ya!
                 </button>
               </form>
             </div>
@@ -292,7 +321,7 @@
         <section class="contact hidden" id="contact">
           <div class="container">
             <div class="contact-content">
-              <h2 class="h2 contact-title">Let’s scale your brand, together</h2>
+              <h2 class="h2 contact-title">Escalamos tu marca JUNTOS</h2>
 
               <figure class="contact-banner">
                 <img src="./assets/images/contact.png" alt="contact banner" />
@@ -301,7 +330,7 @@
 
             <form action="" class="contact-form">
               <div class="input-wrapper">
-                <label for="name" class="input-label">Name *</label>
+                <label for="name" class="input-label">Nombre *</label>
 
                 <input
                   type="text"
@@ -314,7 +343,7 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="phone" class="input-label">Phone</label>
+                <label for="phone" class="input-label">Celular</label>
 
                 <input
                   type="tel"
@@ -326,7 +355,9 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="email" class="input-label">Email Address *</label>
+                <label for="email" class="input-label"
+                  >Correo electronico *</label
+                >
 
                 <input
                   type="email"
@@ -340,7 +371,7 @@
 
               <div class="input-wrapper">
                 <label for="message" class="input-label"
-                  >How can we help? *</label
+                  >¿Como te podemos ayudar? *</label
                 >
 
                 <textarea
@@ -353,7 +384,7 @@
               </div>
 
               <button type="submit" class="btn btn-primary">
-                Send Message
+                Enviar mensaje
               </button>
             </form>
           </div>
@@ -373,7 +404,7 @@
               <img
                 src="./assets/images/logo.svg"
                 alt="Funel logo"
-                style="width: 200px"
+                style="width: 100px"
               />
             </a>
 
@@ -381,19 +412,13 @@
 
             <ul class="social-list">
               <li>
-                <a
-                  href="https://github.com/Amit-Ashok-Swain"
-                  class="social-link"
-                >
+                <a href="#" class="social-link">
                   <ion-icon name="logo-github"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <a
-                  href="https://instagram.com/_sanatani_hindutva_?igshid=OGQ5ZDc2ODk2ZA=="
-                  class="social-link"
-                >
+                <a href="#" class="social-link">
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
@@ -490,9 +515,9 @@
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2023
-          <a href="https://github.com/Amit-Ashok-Swain">Amit Ashok Swain</a> All
-          right reserved
+          &copy; 2025
+          <a href="#">Romma Corporation</a>
+          derechos reservados
         </p>
       </div>
     </footer>
