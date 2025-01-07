@@ -209,6 +209,7 @@ header .container {
   transition: var(--transition);
   transform-origin: top;
   overflow: hidden;
+  width: 100%;
 }
 
 .navbar.active {
